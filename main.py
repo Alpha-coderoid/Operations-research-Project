@@ -40,6 +40,7 @@ while (start):
             txt.pop(-3)
             table[0].append(0)
             table[1].append('S'+str(nSlack))
+            txt[0] = 0
             txt[1] = 'S'+str(nSlack)
             identity += 1
             for i in range(numconstraints):
@@ -54,6 +55,7 @@ while (start):
             table[0].append(0)
             table[1].append('R'+str(nArtificial))
             table[1].append('Su'+str(nSurplus))
+            txt[0] = -999
             txt[1] = 'R'+str(nArtificial)
             for i in range(numconstraints):
                 table[i+2].insert(-1, 0)
@@ -65,6 +67,7 @@ while (start):
             txt.pop(-3)
             table[0].append(-999)
             table[1].append('R'+str(nArtificial))
+            txt[0] = -999
             txt[1] = 'R'+str(nArtificial)
             for i in range(numconstraints):
                 table[i+2].insert(-1, 0)
